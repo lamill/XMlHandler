@@ -1,5 +1,4 @@
 #include "customcontroller.h"
-#include <QDebug>
 #include <QUrl>
 #include <QFile>
 #include "texteditor.h"
@@ -88,7 +87,6 @@ QVector<TextEditor> CustomController::runImportFolder(QStringList lst)
 
         for(auto& filename: lst)
         {
-            QThread::sleep(1);
             QFile file(filename);
             if(!file.open(QIODevice::ReadOnly))
             {

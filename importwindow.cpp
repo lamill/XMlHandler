@@ -1,6 +1,5 @@
 #include "importwindow.h"
 #include <QFileDialog>
-#include <QDebug>
 ImportWindow::ImportWindow(QWidget *parent) : QWidget(parent)
 {
     mainLayout = new QVBoxLayout();

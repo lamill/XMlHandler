@@ -1,5 +1,4 @@
 #include "editwindow.h"
-#include <QDebug>
 EditWindow::EditWindow(QWidget* parent):QDialog(parent,Qt::WindowCloseButtonHint)
 {
     setModal(true);
