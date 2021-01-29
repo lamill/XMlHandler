@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="texteditor" type="xs:string"/>
+        <xs:element name="fileformats" type="enumString"/>
+        <xs:element name="encoding" type="enumString"/>
+        <xs:element name="hasintellisense" type="xs:boolean"/>
+        <xs:element name="hasplugins" type="xs:boolean"/>
+        <xs:element name="cancompile" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+          <xs:simpleType name="enumString">
+          <xs:restriction base="xs:string">
+            <xs:pattern value="^([a-zA-Z0-9-]+; )+[a-zA-Z0-9-]+;$|^[a-zA-Z0-9-]+$"/>
+          </xs:restriction>
+        </xs:simpleType>
+
+</xs:schema>
